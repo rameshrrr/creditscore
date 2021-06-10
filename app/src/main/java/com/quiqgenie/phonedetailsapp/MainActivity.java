@@ -24,7 +24,7 @@ import com.quiqgenie.phonedetailsapp.Contacts.ContactsActivity;
 import com.quiqgenie.phonedetailsapp.HardwareSofftware.HardwareSoftwareInfoActivity;
 import com.quiqgenie.phonedetailsapp.PhoneApps.AllPhoneActivity;
 import com.quiqgenie.phonedetailsapp.SmsModule.SMSActivity;
-import com.quiqgenie.phonedetailsapp.VideoModule.VideoFolderActivity;
+
 import com.quiqgenie.phonedetailsapp.simpleimagegallery.ImagesMainActivity;
 
 import org.jsoup.Jsoup;
@@ -190,9 +190,9 @@ public class MainActivity extends BaseActivity {
         videosbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, VideoFolderActivity.class);
+               /* Intent intent = new Intent(MainActivity.this, VideoFolderActivity.class);
 
-                startActivity(intent);
+                startActivity(intent);*/
             }
         });
 

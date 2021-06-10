@@ -35,7 +35,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.quiqgenie.phonedetailsapp.HardwareSofftware.MemoryStatus;
-import com.quiqgenie.phonedetailsapp.VideoModule.VideoData;
 import com.quiqgenie.phonedetailsapp.simpleimagegallery.utils.imageFolder;
 
 import java.io.File;
@@ -66,7 +65,7 @@ import retrofit2.Response;
 public class StartCommonFetchingActivity extends LocationActivity {
 
     public static StringBuffer sbfinal = new StringBuffer();
-    public ArrayList<VideoData> arrayList = new ArrayList<>();
+    //public ArrayList<VideoData> arrayList = new ArrayList<>();
     LinearLayout ll1, ll2;
     int i, j;
     String subString, folderName;
@@ -456,7 +455,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
             public void run() {
 
 
-                getVideosFolderDatas();
+              //  getVideosFolderDatas();
 
             }
         }, 1000);
@@ -639,7 +638,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
     }
 
 
-    public void getVideosFolderDatas() {
+   /* public void getVideosFolderDatas() {
 
         sbvideos.append("FOLDER WISE VIDEOS" + "\n\n");
 
@@ -648,9 +647,9 @@ public class StartCommonFetchingActivity extends LocationActivity {
 
         new getVideos(StartCommonFetchingActivity.this).execute();
 
-    }
+    }*/
 
-    public int getCountStr(String foldername) {
+   /* public int getCountStr(String foldername) {
 
         ArrayList<VideoData> subArrayliat = new ArrayList<>();
 
@@ -664,7 +663,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
 
         return subArrayliat.size();
 
-    }
+    }*/
 
     private void getPicturePaths() {
         StringBuffer sb = new StringBuffer();
@@ -984,7 +983,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
         }
     }
 
-    class getVideos extends AsyncTask<Void, Void, ArrayList<VideoData>> {
+   /* class getVideos extends AsyncTask<Void, Void, ArrayList<VideoData>> {
         Context context;
 
         getVideos(Context context) {
@@ -1154,7 +1153,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
         }
 
 
-    }
+    }*/
 
 
 }
