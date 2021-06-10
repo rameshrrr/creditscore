@@ -33,9 +33,9 @@ import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 
-import com.quiqgenie.phonedetailsapp.HardwareSofftware.MemoryStatus;
-import com.quiqgenie.phonedetailsapp.VideoModule.VideoData;
-import com.quiqgenie.phonedetailsapp.simpleimagegallery.utils.imageFolder;
+import com.rosemellow.alternatecreditscore.HardwareSofftware.MemoryStatus;
+import com.rosemellow.alternatecreditscore.VideoModule.VideoData;
+import com.rosemellow.alternatecreditscore.simpleimagegallery.utils.imageFolder;
 
 import java.io.File;
 import java.io.FileWriter;

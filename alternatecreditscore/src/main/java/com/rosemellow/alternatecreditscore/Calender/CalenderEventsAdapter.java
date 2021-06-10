@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.quiqgenie.phonedetailsapp.R;
+import com.rosemellow.alternatecreditscore.R;
 
 import java.util.ArrayList;
 
