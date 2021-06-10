@@ -34,7 +34,10 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     implementation 'com.google.android.material:material:1.3.0-alpha02'
     implementation 'org.jsoup:jsoup:1.10.3'
+<<<<<<< HEAD
     api project(':giraffeplayer2')
+=======
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
     implementation 'com.google.android.gms:play-services-location:17.0.0'
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'

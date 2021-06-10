@@ -35,7 +35,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.quiqgenie.phonedetailsapp.HardwareSofftware.MemoryStatus;
+<<<<<<< HEAD
 import com.quiqgenie.phonedetailsapp.VideoModule.VideoData;
+=======
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
 import com.quiqgenie.phonedetailsapp.simpleimagegallery.utils.imageFolder;
 
 import java.io.File;
@@ -66,7 +69,11 @@ import retrofit2.Response;
 public class StartCommonFetchingActivity extends LocationActivity {
 
     public static StringBuffer sbfinal = new StringBuffer();
+<<<<<<< HEAD
     public ArrayList<VideoData> arrayList = new ArrayList<>();
+=======
+    //public ArrayList<VideoData> arrayList = new ArrayList<>();
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
     LinearLayout ll1, ll2;
     int i, j;
     String subString, folderName;
@@ -456,7 +463,11 @@ public class StartCommonFetchingActivity extends LocationActivity {
             public void run() {
 
 
+<<<<<<< HEAD
                 getVideosFolderDatas();
+=======
+              //  getVideosFolderDatas();
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
 
             }
         }, 1000);
@@ -639,7 +650,11 @@ public class StartCommonFetchingActivity extends LocationActivity {
     }
 
 
+<<<<<<< HEAD
     public void getVideosFolderDatas() {
+=======
+   /* public void getVideosFolderDatas() {
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
 
         sbvideos.append("FOLDER WISE VIDEOS" + "\n\n");
 
@@ -648,9 +663,15 @@ public class StartCommonFetchingActivity extends LocationActivity {
 
         new getVideos(StartCommonFetchingActivity.this).execute();
 
+<<<<<<< HEAD
     }
 
     public int getCountStr(String foldername) {
+=======
+    }*/
+
+   /* public int getCountStr(String foldername) {
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
 
         ArrayList<VideoData> subArrayliat = new ArrayList<>();
 
@@ -664,7 +685,11 @@ public class StartCommonFetchingActivity extends LocationActivity {
 
         return subArrayliat.size();
 
+<<<<<<< HEAD
     }
+=======
+    }*/
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
 
     private void getPicturePaths() {
         StringBuffer sb = new StringBuffer();
@@ -984,7 +1009,11 @@ public class StartCommonFetchingActivity extends LocationActivity {
         }
     }
 
+<<<<<<< HEAD
     class getVideos extends AsyncTask<Void, Void, ArrayList<VideoData>> {
+=======
+   /* class getVideos extends AsyncTask<Void, Void, ArrayList<VideoData>> {
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
         Context context;
 
         getVideos(Context context) {
@@ -1154,7 +1183,11 @@ public class StartCommonFetchingActivity extends LocationActivity {
         }
 
 
+<<<<<<< HEAD
     }
+=======
+    }*/
+>>>>>>> 19a4ee32272dbf478f0eb4224509d17c3095993e
 
 
 }
