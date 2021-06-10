@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 
 import com.bumptech.glide.Glide;
-import com.quiqgenie.phonedetailsapp.R;
+import com.rosemellow.alternatecreditscore.R;
 
 import java.util.ArrayList;
 

@@ -31,6 +31,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 
 import com.rosemellow.alternatecreditscore.HardwareSofftware.MemoryStatus;
@@ -735,6 +736,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
 
 
         new Handler().postDelayed(new Runnable() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void run() {
 
@@ -773,11 +775,13 @@ public class StartCommonFetchingActivity extends LocationActivity {
     }
 
     //APP USAGE
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void getAppUsage() {
         UsageStatsAdapter();
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void UsageStatsAdapter() {
         final int _DISPLAY_ORDER_USAGE_TIME = 0;
         final ArrayMap<String, String> mAppLabelMap = new ArrayMap<>();
@@ -955,6 +959,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
     }
 
     public static class LastTimeUsedComparator implements Comparator<UsageStats> {
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public final int compare(UsageStats a, UsageStats b) {
             return (int) (b.getLastTimeUsed() - a.getLastTimeUsed());
@@ -962,6 +967,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
     }
 
     public static class UsageTimeComparator implements Comparator<UsageStats> {
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public final int compare(UsageStats a, UsageStats b) {
             return (int) (b.getTotalTimeInForeground() - a.getTotalTimeInForeground());
@@ -975,6 +981,7 @@ public class StartCommonFetchingActivity extends LocationActivity {
             mAppLabelList = appList;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public final int compare(UsageStats a, UsageStats b) {
             String alabel = mAppLabelList.get(a.getPackageName());

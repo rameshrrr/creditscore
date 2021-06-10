@@ -20,10 +20,10 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.quiqgenie.phonedetailsapp.R;
-import com.quiqgenie.phonedetailsapp.simpleimagegallery.utils.imageIndicatorListener;
-import com.quiqgenie.phonedetailsapp.simpleimagegallery.utils.pictureFacer;
-import com.quiqgenie.phonedetailsapp.simpleimagegallery.utils.recyclerViewPagerImageIndicator;
+import com.rosemellow.alternatecreditscore.R;
+import com.rosemellow.alternatecreditscore.simpleimagegallery.utils.imageIndicatorListener;
+import com.rosemellow.alternatecreditscore.simpleimagegallery.utils.pictureFacer;
+import com.rosemellow.alternatecreditscore.simpleimagegallery.utils.recyclerViewPagerImageIndicator;
 
 import java.util.ArrayList;
 

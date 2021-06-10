@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.quiqgenie.phonedetailsapp.R;
+import com.rosemellow.alternatecreditscore.R;
 
 
 public class PicHolder extends RecyclerView.ViewHolder{

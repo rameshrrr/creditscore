@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.format.DateUtils;
@@ -25,11 +26,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.opencsv.CSVWriter;
-import com.quiqgenie.phonedetailsapp.R;
-import com.quiqgenie.phonedetailsapp.SavePref;
+import com.rosemellow.alternatecreditscore.R;
+import com.rosemellow.alternatecreditscore.SavePref;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -61,6 +63,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
         return true;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -104,6 +107,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
         listView.setAdapter(mAdapter);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         mAdapter.sortList(position);
@@ -163,6 +167,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
             mAppLabelList = appList;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public final int compare(UsageStats a, UsageStats b) {
             String alabel = mAppLabelList.get(a.getPackageName());
@@ -172,6 +177,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
     }
 
     public static class LastTimeUsedComparator implements Comparator<UsageStats> {
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public final int compare(UsageStats a, UsageStats b) {
             return (int) (b.getLastTimeUsed() - a.getLastTimeUsed());
@@ -179,6 +185,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
     }
 
     public static class UsageTimeComparator implements Comparator<UsageStats> {
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public final int compare(UsageStats a, UsageStats b) {
             return (int) (b.getTotalTimeInForeground() - a.getTotalTimeInForeground());
@@ -191,6 +198,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
         TextView usageTime;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     class UsageStatsAdapter extends BaseAdapter {
 
         private static final int _DISPLAY_ORDER_USAGE_TIME = 0;
@@ -203,6 +211,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
         private UsageTimeComparator mUsageTimeComparator = new UsageTimeComparator();
         private AppNameComparator mAppLabelComparator;
 
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         UsageStatsAdapter() {
             Calendar cal = Calendar.getInstance();
             cal.add(Calendar.DAY_OF_YEAR, -5);
@@ -258,6 +267,7 @@ public class UsageStatsActivity extends AppCompatActivity implements OnItemSelec
             return position;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
 

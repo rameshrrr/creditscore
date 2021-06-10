@@ -7,7 +7,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.quiqgenie.phonedetailsapp.R;
+import com.rosemellow.alternatecreditscore.R;
 
 /**
  * Author CodeBoy722

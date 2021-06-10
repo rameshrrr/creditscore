@@ -16,16 +16,16 @@ import android.widget.Button;
 
 import androidx.annotation.RequiresApi;
 
-import com.quiqgenie.phonedetailsapp.AppUsage.UsageStatsActivity;
-import com.quiqgenie.phonedetailsapp.Calender.CalenderActivity;
-import com.quiqgenie.phonedetailsapp.CallHistory.CallHistoryActivity;
-import com.quiqgenie.phonedetailsapp.CategoryWisePhoneApps.CatAllPhoneActivity;
-import com.quiqgenie.phonedetailsapp.Contacts.ContactsActivity;
-import com.quiqgenie.phonedetailsapp.HardwareSofftware.HardwareSoftwareInfoActivity;
-import com.quiqgenie.phonedetailsapp.PhoneApps.AllPhoneActivity;
-import com.quiqgenie.phonedetailsapp.SmsModule.SMSActivity;
-import com.quiqgenie.phonedetailsapp.VideoModule.VideoFolderActivity;
-import com.quiqgenie.phonedetailsapp.simpleimagegallery.ImagesMainActivity;
+import com.rosemellow.alternatecreditscore.AppUsage.UsageStatsActivity;
+import com.rosemellow.alternatecreditscore.Calender.CalenderActivity;
+import com.rosemellow.alternatecreditscore.CallHistory.CallHistoryActivity;
+import com.rosemellow.alternatecreditscore.CategoryWisePhoneApps.CatAllPhoneActivity;
+import com.rosemellow.alternatecreditscore.Contacts.ContactsActivity;
+import com.rosemellow.alternatecreditscore.HardwareSofftware.HardwareSoftwareInfoActivity;
+import com.rosemellow.alternatecreditscore.PhoneApps.AllPhoneActivity;
+import com.rosemellow.alternatecreditscore.SmsModule.SMSActivity;
+import com.rosemellow.alternatecreditscore.VideoModule.VideoFolderActivity;
+import com.rosemellow.alternatecreditscore.simpleimagegallery.ImagesMainActivity;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
